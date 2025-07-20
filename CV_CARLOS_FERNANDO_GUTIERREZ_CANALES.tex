@@ -1,0 +1,159 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Define colors
+\definecolor{darkgray}{RGB}{80,80,80}
+\definecolor{lightgray}{RGB}{120,120,120}
+
+% Remove page numbering
+\pagestyle{empty}
+
+% Custom section formatting
+\titleformat{\section}{\large\bfseries\color{darkgray}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries\color{darkgray}}{}{0em}{}
+
+% Adjust spacing
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+\titlespacing*{\subsection}{0pt}{8pt}{4pt}
+
+% Custom list formatting
+\setlist[itemize]{leftmargin=15pt, itemsep=2pt, parsep=0pt, topsep=4pt}
+\setlist[itemize,2]{leftmargin=20pt, itemsep=1pt, parsep=0pt, topsep=2pt}
+
+% Hyperlink setup
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=black,
+	citecolor=black
+}
+
+\begin{document}
+	
+	% Header
+	\begin{center}
+		{\Huge\bfseries Dr. Argyrios Koumtzis}\\[8pt]
+		Göttingen, Germany | +49 162 9583532 | \href{mailto:argiris.koumtzis@gmail.com}{argiris.koumtzis@gmail.com}
+	\end{center}
+	
+	\vspace{10pt}
+	
+	% Two-column layout
+	\begin{multicols}{2}
+		
+		% LEFT COLUMN
+		\section{Skills}
+		
+		\subsection{Programming:}
+		\begin{itemize}
+			\item \textbf{Advanced:} C, Fortran, \textbf{Python} (NumPy, SciPy, Matplotlib, MayaVi, PyTorch, Scikit-Learn)
+			\item \textbf{Intermediate:} Julia, Version Control (Git), Emacs Lisp, bash, high performance computing clusters
+			\item \textbf{Beginner:} Parallel computing: OpenMP (used with Fortran and C), GPU computing using CUDA C, SQL
+			\item \textbf{Computational modeling:} PDEs, finite differences, spectral methods
+			\item \textbf{Machine learning:} Physics-informed neural networks optimization algorithms
+			\item Data analysis, data visualization
+			\item \textbf{Plasma physics:} Magnetohydrodynamics, kinetic simulations, anomalous transport phenomena
+			\item \textbf{Office applications:} Microsoft Office, Libre Office, LaTeX, Emacs
+		\end{itemize}
+		
+		\subsection{Languages}
+		\begin{itemize}
+			\item \textbf{Greek:} native
+			\item \textbf{English:} professional
+			\begin{itemize}
+				\item TOEFL: 115/120
+			\end{itemize}
+		\end{itemize}
+		
+		\section{Finance \& Entrepreneurship}
+		\begin{itemize}
+			\item Developed Python code for stock screening
+			\item Completed courses in Introduction to Corporate Finance at Columbia University via EDX and reading relevant books
+			\item Managing a personal stock portfolio
+			\item Financial modeling, e.g. DCF
+			\item Advisor for a robotics team that won \textbf{first place} in the \textbf{International Robot Olympiad 2020}
+			\item Proactively researching the real estate market to identify attractive investment opportunities
+			\item Managing two Airbnb units
+		\end{itemize}
+		
+		\columnbreak
+		
+		% RIGHT COLUMN
+		\section{Summary}
+		Computational researcher and quantitative developer with 8 years experience in tools like partial differential equations, \textbf{optimization algorithms}, Monte Carlo simulations, \textbf{machine learning} and physics informed neural networks. A team player who is also ready to take leadership roles and enjoys mentoring junior team members. Being a self-starter in finance, I am excited to apply my quantitative skills to explore the field of quantitative finance within dynamic fast-paced environments.
+		
+		\section{Research Experience \& Education}
+		
+		\subsection{July 2023 - present}
+		\textbf{Postdoctoral Researcher | Max Planck Institute for Solar System Research}
+		\begin{itemize}
+			\item Implementing \textbf{physics-informed neural networks} for solving partial differential equations that characterize the magnetic field structure within the solar corona
+			\item Validating computational models of the coronal magnetic field through comparative analysis with spacecraft observations
+		\end{itemize}
+		
+		\subsection{October 2019 – June 2023}
+		\textbf{PhD Candidate | Max Planck Institute for Solar System Research}
+		\begin{itemize}
+			\item Thesis topic: Computational modeling of the solar coronal magnetic field
+			\begin{itemize}
+				\item Grade: \textbf{magna cum laude}
+			\end{itemize}
+			\item \textbf{Key result:} Developed a \textbf{state-of-the-art numerical code} that reconstructs the 3D structure of the solar coronal magnetic field using observations from space telescopes
+			\item The code is written in C language, parallelized with open MP, and implemented on a Yin-Yang computational grid
+			\item Participating in a multi-institution international team formed to compare coronal magnetic field models
+			\item \textbf{Teaching experience:} Supervision of junior team members
+		\end{itemize}
+		
+		\subsection{2014 – 2019}
+		\textbf{Bachelor's Degree in Physics | Aristotle University of Thessaloniki, Greece}
+		\begin{itemize}
+			\item \textbf{GPA: 9.39/10} (ranking 1st among 280 students)
+			\item \textbf{Undergraduate Research Assistant} in group Plasma Physics \& High Energy Astrophysics | 01/2016 – 10/2019
+			\item Thesis: Power law flare statistics driven by photospheric turbulence
+			\item Developed a \textbf{spectral code} for linear force-free magnetic field extrapolation in the solar corona in Fortran and Julia
+			\item Developed a Fortran \textbf{Monte Carlo code} driven by observed probability distributions to study solar flare statistics
+			\item Teaching assistant in Astronomy course
+		\end{itemize}
+		
+		\subsection{Summer research intern | Oxford University, UK | Summer 2017}
+		\begin{itemize}
+			\item Estimating intergalactic magnetic fields
+			\item Conducted 4D high performance computing Monte Carlo simulations
+			\item Used \textbf{machine learning} to analyze multidimensional simulation data output
+		\end{itemize}
+		
+	\end{multicols}
+	
+	\section{Conferences}
+	\begin{itemize}
+		\item \textbf{Speaker in}
+		\begin{itemize}
+			\item EGU (European Geological Union) | 2022, 2023
+			\item DPG (Deutsche Physikalische Gesellschaft) Meeting | 2022
+			\item Workshop "Nonlinear Dynamical Systems" | 2019
+		\end{itemize}
+		\item \textbf{Invited participant:} Interdisciplinary international workshop "The audible universe" 1 and 2 | 2021, 2022
+	\end{itemize}
+	
+	\section{Scholarships \& Awards}
+	\begin{itemize}
+		\item Scholarship for academic excellence from National Bank of Greece | 2018
+		\item Scholarship for an Educational Trip to \textbf{Massachusetts Institute of Technology} | 2016
+		\item Award by the Greek Rotary Club for achieving a societal change: contribution to free access for the disabled to higher education | 2015
+		\item 5th Position in International Youth Chess Championship for the blind | 2015
+	\end{itemize}
+	
+	\section{Publications}
+	\begin{itemize}
+		\item Superdiffusive Stochastic Fermi Acceleration in Space and Energy, 2019, N. Siulas, H. Isliker, L. Vlahos, A. Koumtzis.
+		\item A New Global Nonlinear Force-Free Coronal Magnetic-Field Extrapolation Code Implemented on a Yin-Yang Grid, 2023, A. Koumtzis, T. Wiegelmann.
+		\item Global full sphere coronal field extrapolation during solar minimum and maximum, A. Koumtzis, T. Wiegelmann, M. Madjarska, to be submitted in November 2023.
+	\end{itemize}
+	
+\end{document}
