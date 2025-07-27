@@ -5,6 +5,7 @@
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{xcolor}
+\usepackage{fontawesome5}  % Add this in your preamble
 \usepackage{hyperref}
 
 % Define colors
@@ -35,12 +36,14 @@
 }
 
 \begin{document}
-	
-	% Header
-	\begin{center}
-		{\Huge\bfseries Dr. Fernando Guti\'errez Canales}\\[8pt]
-		Göttingen, Germany | +33 651708080 | \href{mailto:carl.cfgc@gmail.com}{carl.cfgc@gmail.com}
-	\end{center}
+\begin{center}
+  {\Huge\bfseries Dr. Fernando Guti\'errez Canales}\\[8pt]
+  \faMapMarker*~Göttingen, Germany \quad | \quad
+  \faPhone~+33 6 51 70 80 80 \quad | \quad
+  \faEnvelope~\href{mailto:carl.cfgc@gmail.com}{carl.cfgc@gmail.com} \quad | \quad
+  \faGitlab~\href{https://gitlab.obspm.fr/fgutierrez}{gitlab.obspm.fr/fgutierrez} \quad | \quad
+  \faGithub~\href{https://github.com/Fernando-Canales}{gtihub.com/Fernando-Canales}
+\end{center}
 	
 	\vspace{10pt}
 	
@@ -55,21 +58,10 @@
 			\item \textbf{Advanced:} \textbf{Python} (NumPy, SciPy, Matplotlib, Conda, Venv, Scikit-Learn), C, Fortran,
 			\item \textbf{Intermediate:} R, Version Control (Git and Subversion), bash, ssh
 			\item \textbf{Beginner:} Parallel computing: OpenMP (used with Fortran and C)
-			\item \textbf{Computational modeling:} PDEs, Large Data-bases, Time-series
-			\item Data analysis, data visualization
+			\item \textbf{Computational modeling:} PDEs, Large Data-bases, Time-series, Data analysis, Data visualization
 			\item \textbf{Astrophysics:} Hydrodynamics, kinetic simulations, Bayesian statistics
 			\item \textbf{Office applications:} Microsoft Office, Libre Office, \LaTeX , Vim, nano
-		\end{itemize}
-		
-		\subsection{Languages}
-		\begin{itemize}
-			\item \textbf{Spanish:} native
-			\item \textbf{English:} professional
-			\begin{itemize}
-				\item IELTS: C1
-			\end{itemize}
-			\item \textbf{French:} good
-			\item \textbf{German:} basic
+			\item \textbf{Languages:} Spanish (native), English (C1), French (good) and German (basic)
 		\end{itemize}
 		
 		\subsection{Soft Skills}
@@ -77,8 +69,8 @@
 		\begin{itemize}
 			\item Effective Team Collaboration
 			\item Strategic Planning and Problem Solving
-			\item Leading and Delegation (including Mentoring Junior members)
-			\item Clear Communication (both tehcnical and non-technical)
+			\item Leading and Delegation (including mentoring junior colleagues)
+			\item Clear Communication (both technical and non-technical)
 			\item Adaptability and Time Management
 		\end{itemize}
 		
@@ -92,39 +84,36 @@
 		\subsection{March 2022 – March 2025}
 		\textbf{PhD | Paris Observatory and Max Planck Institute for Solar System Research}
 		\begin{itemize}
-			\item Thesis topic: The PLATO space mission: Double-aperture photometry and Centroid Shifts to detect False Positives
+			\item \textbf{Thesis:} The \mbox{PLATO space mission:} Double-aperture photometry and Centroid Shifts to detect False Positives
 			\begin{itemize}
 				\item Grade: \textbf{With honors}
 			\end{itemize}
-			\item \textbf{Key result:} Developed, in the context of PLATO space mission, a \textbf{state-of-the-art numerical code} that estimates for the first time the overall efficiency of the centroid method to detect false planetary transit and also the overall efficiency a novel method called double-aperture photometry.
-			\item The code is written in Python language, based on several libraries written in C and bash, and publicly available in a gitlab remote repository
-			\item Participating in a huge multi-institution international consortium formed to develop the PLATO mission instrument and pipeline
+			\item \textbf{Key result:} Developed python-based simulations to estimate the detection efficiency of exoplanet vetting techniques (the established centroid shift and the novel double-aperture photometry) for the PLATO space mission. Integrated C and bash libraries; published code on Gitlab. The produced results constitute the first estimation of the overall efficiency of both techniques.
+			\item Collaborated with an international consortium ($<$20 institutions and countries) on instrument development and pipeline design for ESA's PLATO space mission.
 		\end{itemize}
 		
 		\subsection{2019 - 2021}
 		\textbf{Master's degree in Sciences: Astrophysics | University of Guanajuato, Mexico}
 		\begin{itemize}
 		\item \textbf{GPA: 9.5/10}
-		\item Thesis: Homogeneous Anlysis of K2 exoplanet systems hosting USP planets
-		\item \textbf{Key result:}Implemented and mastered the scientific code pyaneti for improving the mass and radii measurement of several exoplanets previously discovered by K2 space mission. 
+		\item \textbf{Thesis:} Homogeneous Analysis of K2 exoplanet systems hosting USP planets
+		\item \textbf{Key result:} Implemented and mastered the scientific software pyaneti to improve exoplanet parameter estimation for K2 systems. 
 		\end{itemize}
 		
 		\subsection{2014 – 2019}
-		\textbf{Bachelor's Degree in Physics | University of Guanjuato, Mexico}
+		\textbf{Bachelor's Degree in Physics | University of Guanajuato, Mexico}
 		\begin{itemize}
 			\item \textbf{GPA: 9.0/10}
 			\item \textbf{Undergraduate Research Assistant} in the group of Non-linear Optics of the University of Guanajuato | 01/2016 – 10/2019
-			\item Thesis: Atomic theory and scientific realism
+			\item \textbf{Thesis:} Atomic theory and scientific realism
 			\item Developed a scientific publication about the most important philosophical and physical ways to show that atoms exist. 
 		\end{itemize}
 		
 		\subsection{Research intern | ESTEC (European Space Agency), The Netherlands | 2023}
 		\begin{itemize}
-			\item Estimating Charge Transfer Inefficiency, CTI, parameters for PLATO detectors
+			\item Estimating Charge Transfer Inefficiency, CTI, parameters for PLATO detectors using Python and DS9.
 			\item Conducted in-situ measurements with a real PLATO CCD detector
-			\item Used \textbf{Python and DS9} to analyze multidimensional simulation data output
 		\end{itemize}
-		
 	\end{multicols}
 	
 	\section{Conferences}
@@ -142,7 +131,7 @@
 		\item PhD obtained with Honors | 2025
 		\item Erasmus$+$ scholarship for an internship at ESTEC, the largest European Space Agency (ESA) center in Europe | 2023
 		\item Master's degree obtained with Honors | 2021
-		\item Scholarship for studyng a master's degree in Mexico with international competence | 2018
+		\item Scholarship for studying a master's degree in Mexico with international competence | 2018
 		\item Bachelor's degree obtained with Honors | 2019
 	\end{itemize}
 	
@@ -150,7 +139,7 @@
 	\begin{itemize}
 		\item Interpretation of Optical and IR Light Curves for Transitional Disk Candidates in NGC 2264 Using the Extincted Stellar Radiation and the Emission of Optically Thin Dust Inside the Hole, 2021, E. Nagel, F. Gutiérrez-Canales, S. Morales-Gutiérrez and A. P. Sousa.
 		\item The young HD 73583 (TOI-560) planetary system: Two 10-M$_{\oplus}$ mini-Neptunes transiting a 500-Myr-old, bright, and active K dwarf, 2023, O. Barrag\'an,.., F. Gutiérrez-Canales, ..., E. Nagel
-		\item Detecting False Positives with PLATO using Double-Aperture Photometry and Centroid Shifts , F. Gutiérrez-Canales, R. Samadi A. Birch, , submitted in December 2024.
+		\item Detecting False Positives with PLATO using Double-Aperture Photometry and Centroid Shifts , F. Gutiérrez-Canales, R. Samadi A. Birch, submitted in December 2024.
 	\end{itemize}
 	
 \end{document}
